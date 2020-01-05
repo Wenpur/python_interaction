@@ -18,3 +18,6 @@
 
 * “/index”跳转可以看到**首页**，也就是项目的介绍；“/local_expense”跳转可以**地方财政教育支**；“/detail”看**视图详情**；“/scatter”看**四个不同省份的对比**；“/effectScatter”看**四川特殊教育基本情**；“/data”就是**数据**
 
+## HTML控件
+* table,select,footer
+
