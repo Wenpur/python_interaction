@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>{% extends 'base.html' %}
+
+{% block body %}
+<div>
+    <strong><input value='点击下拉选框！!' type='SUBMIT'></strong></br>
+    <select onchange="window.location=this.value;">
+        <option name="下拉表单">  </option>
+        <option value="/index">首页</option>
+        <option value="/local_expense">地方财政教育支出</option>
+        <option value="/detail">详情视图</option>
+        <option value="/scatter">四个不同省份对比</option>
+        <option value="/effectScatter">四川特殊教育基本情况</option>
+        <option value="data">数据</option>
+    </select>
+</div>
+
+</br>
+<div>{{ result }}</div>
+</br>
+<div><strong>小结：</strong>
+
+<p>看图1-6，抽取了四川省来放大观察，特殊教育在校生高达5万人，而专任教师才0.3万人，师生的比例不协调，不平衡。</p>
+<p>看图1,可得知，四川省的教育财政支出高达1400亿元。在投入特殊教育方面，可以猜测可能是比较少量的支出。</p>
+</div>
+</br>
+<div><strong>总结：</strong>
+
+    <p>1、 近十年来，在全国各省的教育财政支出中，可以看出，东部沿海的省份是随年增多，且明显看出投入的资金较多，注重教育。</p>
+    <p>2、在特殊教育方面来看，全国各省中，四川省是较为突出的一个省份，教育资金与人才培养方面较为不协调，不平衡。相较于其他各省，特殊教育的学生在四川省是显得有点不公平。</p>
+    <p>3、特殊教育由于受教育对象的特殊性，对教学设施设备等的投入也较普通教育有更多要求，因而特殊教育需要大量资金支持。
+        政府作为我国特殊教育办学的主体,合理规划和使用经费，是实现特殊教育的公平与效率的重要途径。</p>
+    <p>虽然我国对教育的财政支出明显增加，但是对特殊教育财政支出只占教育总支出的不多，还需加大投入。
+        特殊教育的普及程度远远不够，特殊教育的受益面极也不高，导致许多特殊学生难以享受到与普通学生同等的教育资源。</p>
+</div>
+{% endblock %}
+</body>
+</html>

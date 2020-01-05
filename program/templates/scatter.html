@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>{% extends 'base.html' %}
+
+{% block body %}
+<div>
+    <strong><input value='点击下拉选框！!' type='SUBMIT'></strong></br>
+    <select onchange="window.location=this.value;">
+        <option name="下拉表单">  </option>
+        <option value="/index">首页</option>
+        <option value="/local_expense">地方财政教育支出</option>
+        <option value="/detail">详情视图</option>
+        <option value="/scatter">四个不同省份对比</option>
+        <option value="/effectScatter">四川特殊教育基本情况</option>
+        <option value="data">数据</option>
+    </select>
+</div>
+</br>
+<div>{{ result }}</div>
+</br>
+<div><strong>小结：</strong>
+
+<p>从全国各省中，抽取了明显变化很大的4个省份，分别是广东、四川、山东和河南。</p>
+<p>从图1-5可知，四川省特殊教育招生数量位居第一，但却担任特殊教育专任的教师数量则是最少的。
+    由2017年最大差距数据来看，学生与老师的比例约为1/5,老师平均1个老师看管5个学生。反而山东省是相反的，专任的教师比特殊教育比学生多，并且10年持续增长。</p>
+<p>看河南省，招生量迅速上升，在近2-3年，即2016-2018年，上升的幅度较大，而教师的数量则稳步提高，无明显的变动。</p>
+<p>广东省，招生的速度不稳定，但是数量高居第二，且在2015-2017年有波动现象。</p>
+</div>
+{% endblock %}
+</body>
+</html>

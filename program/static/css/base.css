@@ -1,0 +1,44 @@
+body{
+      background-image:linear-gradient(to right,#99CCFF 0%, #33CC99 100%);
+      }
+h2{
+    font-size: large;
+}
+table { display: block; }
+
+ table {
+        width:55%;
+        height: 400px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+a{
+        text-decoration: none;
+        color:#6666FF;
+    }
+    a:hover {
+        color:#FF3300;
+        text-decoration:none;
+        font-size: x-large;
+    }
+
+#header {
+    background-color:#CD5C5C;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    background-color:#F5DEB3;
+    color:black;
+    clear:both;
+    text-align:center;
+   padding:5px;
+}
+

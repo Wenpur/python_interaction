@@ -1,0 +1,25 @@
+
+
+<body>{% extends 'base.html' %}
+
+{% block body %}
+<div>
+    <strong><input value='点击下拉选框！!' type='SUBMIT'></strong></br>
+    <select onchange="window.location=this.value;">
+        <option name="下拉表单">  </option>
+        <option value="/index">首页</option>
+        <option value="/local_expense">地方财政教育支出</option>
+        <option value="/detail">详情视图</option>
+        <option value="/scatter">四个不同省份对比</option>
+        <option value="/effectScatter">四川特殊教育基本情况</option>
+        <option value="data">数据</option>
+    </select>
+</div>
+</br>
+<div>{{ result}}</div>
+</br>
+<div><strong>{{ conculsion }}</strong></div>
+
+{% endblock %}
+</body>
+</html>
